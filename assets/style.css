@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(210, 46%, 95%);
+}
+body .container {
+  position: relative;
+  background-color: white;
+  font-family: "Manrope", sans-serif;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  height: 20rem;
+  z-index: 5;
+}
+body .container .imgside {
+  width: 50rem;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+body .container .imgside img {
+  width: 20rem;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+body .container .discription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 75rem;
+  height: 20rem;
+  gap: 1rem;
+}
+body .container .discription h1 {
+  font-size: 1.5rem;
+  color: hsl(217, 19%, 35%);
+  padding: 1.5rem 1.5rem 0rem 1.5rem;
+}
+body .container .discription .text {
+  padding: 0rem 1.5rem;
+  color: hsl(214, 17%, 51%);
+}
+body .container .discription .profile {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body .container .discription .profile .change {
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  width: 100%;
+  height: 100%;
+}
+body .container .discription .profile .change p {
+  font-size: 0.8rem;
+  color: hsl(212, 23%, 69%);
+  font-weight: 600;
+}
+body .container .discription .profile .change img {
+  cursor: pointer;
+}
+body .container .discription .profile .profileimg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body .container .discription .profile .profileimg .realimg {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0.25);
+  left: -2.5rem;
+}
+body .container .discription .profile .profileimg .name {
+  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .container .discription .profile .profileimg .name p {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: hsl(217, 19%, 35%);
+}
+body .container .discription .profile .profileimg .name .date {
+  color: hsl(212, 23%, 69%);
+  padding-right: 3rem;
+  font-size: 0.8rem;
+}
+body .container .discription .profile .share {
+  position: absolute;
+  right: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-left: 5rem;
+  background-color: hsl(210, 46%, 95%);
+}
+body .container .discription .profile .share img {
+  color: white;
+  cursor: pointer;
+}
+body .container .discription .profile .share .sharebox {
+  display: none;
+  width: 14rem;
+  height: 3.5rem;
+  top: -4rem;
+  right: -5rem;
+  position: absolute;
+  z-index: 999;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: hsl(217, 19%, 35%);
+}
+body .container .discription .profile .share .sharebox p {
+  font-size: 0.8rem;
+  color: hsl(212, 23%, 69%);
+  font-weight: 600;
+}
+body .container .discription .profile .share .sharebox img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+  }
+  body .container .imgside {
+    width: 100%;
+  }
+  body .container .imgside img {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .discription {
+    width: 100%;
+    height: 25rem;
+  }
+  body .container .discription .profile .share .sharebox {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */
